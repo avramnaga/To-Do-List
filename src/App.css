@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+body{
+
+background-color: rgb(27, 239, 232);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.to-do-list{
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 100px;
+
+}
+h1{
+font-size:4rem ;
+color: white;
+}
+button{
+  font-size: 1.7rem;
+  font-weight:'bold';
+  padding: 10px 20px ;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.5ease;
+}
+.add-button{
+
+  background-color: rgb(26, 238, 26);
+}
+.add-button:hover{
+
+  background-color: rgb(26, 238, 16);
+}
+.delete-button{
+
+  background-color: rgb(255, 46, 4);
+}
+.delete-button:hover{
+
+  background-color: rgb(244, 8, 0);
+}
+.move-button{
+
+  background-color: rgb(0, 153, 235);
+}
+.move-button:hover{
+
+  background-color: rgb(37, 41, 255);
+}
+input[type='text']{
+font-size: 1.7rem ;
+padding: 10px;
+border: 2px solid  black;
+border-radius: 5px;
+color: #000; /* צבע טקסט שחור */
 }
 
-.App-link {
-  color: #61dafb;
+ol{
+padding: 0;
+}
+li{
+font-size:2rem ;
+font-weight: bold;
+padding: 15px;
+background-color: white;
+margin-bottom: 10px;
+border: 3px  solid gray;
+border-radius:  5px;
+display: flex;
+align-items: center;
+
+}
+.text{
+  flex: 1;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0%; */
+}
+.delete-button,.move-button{
+padding: 8px;
+font-size:1.4rem;
+margin-left: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
